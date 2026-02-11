@@ -1,20 +1,137 @@
-.btn-primary {
-    background-color: #4da6ff;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b1120;
     color: white;
-    padding: 12px 25px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(10,15,30,0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #0b1120, #1e3a8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #94a3b8;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #38bdf8;
+    padding: 14px 30px;
+    border-radius: 30px;
+    color: #0b1120;
+    text-decoration: none;
+    font-weight: bold;
     margin-right: 10px;
 }
 
 .btn-primary:hover {
-    background-color: #2d8cff;
+    background: #0ea5e9;
 }
 
 .btn-secondary {
-    background-color: white;
-    color: #142b47;
-    padding: 12px 25px;
+    border: 2px solid #38bdf8;
+    padding: 14px 30px;
+    border-radius: 30px;
+    color: #38bdf8;
     text-decoration: none;
-    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background: #38bdf8;
+    color: #0b1120;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 50px;
+    background: #111827;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+.card h3 {
+    color: #38bdf8;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 50px;
+    background: #0f172a;
+}
+
+.stat h2 {
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+.stat p {
+    color: #94a3b8;
+}
+
+/* FOOTER */
+footer {
+    background: #0b1120;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
